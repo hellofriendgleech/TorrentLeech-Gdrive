@@ -2,14 +2,14 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1177066431:AAHyN0PxJ9B_Vw5GPwbRspFHcy9u3rxUM8M")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    APP_ID = int(os.environ.get("APP_ID", 1474808))
+    API_HASH = os.environ.get("API_HASH", 10c9e59fb3bfaee28bb6e76f7d5a6855)
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1283735480))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "-477648128").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -37,8 +37,11 @@ class Config(object):
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
     LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
     YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
-    RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-    DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
+    RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "type = drive
+scope = drive
+token = {"access_token":"ya29.a0AfH6SMDct2uWnbN_LJDR-wTSUu3N5AKTDHehBWNjGGpRsHkKihW4F1PGaeYmRHsYf1-B8DBdHjhw5ybX0_oMs7ge1q_bCT0NDtkf7Pln_vr8flKzW11dU531wh_5N_EsKJh6I5sx3yk_taMXcaP9N8rVXrVeUtaTxxQ","token_type":"Bearer","refresh_token":"1//0gPZ3HWJ6W7YcCgYIARAAGBASNwF-L9IrNL8CeXTDU221kgJ5aspuIDlk4hM7WHcXf1LotnnIhEq7Bieuzw4zH2kUUxetBquIhFM","expiry":"2020-06-23T18:32:03.76910669Z"}
+root_folder_id = 18iWw_jEh2G4CNXMKuxwUm9h6HPfPCxzp")
+    DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "Gleech")
     GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
     INDEX_LINK = os.environ.get("INDEX_LINK", "")
     TELEGRAM_LEECH_COMMAND_G = os.environ.get("TELEGRAM_LEECH_COMMAND_G", "tleech")
@@ -47,7 +50,7 @@ class Config(object):
     STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
     SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
     CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
-    UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
+    UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "true")
     PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
     CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
